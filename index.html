@@ -11,13 +11,13 @@
 
 </head>
 <body>
-  <div id="main" class="relative h-screen border-b-2 lg:grid lg:grid-cols-2 lg:gap-4">
+  <div id="main" class="relative h-screen lg:border-b-2 lg:grid lg:grid-cols-2 lg:gap-4">
     <!-- CSS: right sight border as line seperator
       - Phone top - down
       - Lap right left.
     -->
     <div id="left" class="left lg:my-0 my-20 ">
-      <div class="imgBorder border-r-2">
+      <div class="imgBorder lg:border-r-2">
         <img id='img' src="" alt="" class="img m-auto w-64 main-image rounded-lg" >
       </div>
     </div>
@@ -25,16 +25,23 @@
     <!-- Main - Contents -->
     <div id="contents" class="m-auto px-4 lg:my-20 child">
       <div id="name" class="text-center lg:text-left text-6xl"></div>
-      <div id="role" class="text-center lg:text-left text-3xl"></div>
-      <div id="connects" class="text-center lg:text-left text-3xl my-4">
-
+      <div class="lg:flex">
+        <div>
+          <div id="role" class="text-center lg:text-left text-3xl"></div>
+          <div id="connects" class="text-center lg:text-left text-3xl my-4"></div>
+          <div id="links" class="text-center lg:text-left"></div>
+          <a target="_top" id="mail" class="block text-center lg:text-left text-sm my-2"></a>
+        </div>
+        <div class="mx-auto w-64">
+          <codersrank-widget username="guemidiborhane" layout="horizontal"></codersrank-widget>
+        </div>
       </div>
-      <div id="links" class="text-center lg:text-left"></div>
-      <a target="_top" id="mail" class="block text-center lg:text-left text-sm my-2"></a>
     </div>
+
   </div>
 
   <!-- <ion-icon name="heart"></ion-icon> -->
+  <script src="https://profile.codersrank.io/widget/widget.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="./data.js"></script>
   <script src="./script.js"></script>
