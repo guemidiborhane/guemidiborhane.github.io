@@ -1,7 +1,7 @@
 const main = {
   name: 'Borhaneddine GUEMIDI',
   mail: 'guemidiborhane@gmail.com',
-  img: 'https://www.gravatar.com/avatar/1aeb75e3e1bd8cb0e2c93eff4c38e8ca/?s=512&d=mp&r=g',
+  img: 'https://www.gravatar.com/avatar/1aeb75e3e1bd8cb0e2c93eff4c38e8ca/?s=1024&d=mp&r=g',
   role: ['Full Stack Developer'],
   // Refer https://ionicons.com/ and put the icon name inside iconName key
   connects: [
