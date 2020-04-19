@@ -11,28 +11,28 @@
 
 </head>
 <body>
-  <div id="main" class="relative h-screen lg:border-b-2 lg:grid lg:grid-cols-2 lg:gap-4">
+  <div id="main" class="relative h-screen flex items-center">
     <!-- CSS: right sight border as line seperator
       - Phone top - down
       - Lap right left.
     -->
-    <div id="left" class="left lg:my-0 my-20 ">
+    <div id="left" class="left lg:my-0 my-20 hidden ">
       <div class="imgBorder lg:border-r-2">
         <img id='img' src="" alt="" class="img m-auto w-64 main-image rounded-lg" >
       </div>
     </div>
 
     <!-- Main - Contents -->
-    <div id="contents" class="m-auto px-4 lg:my-20 child">
-      <div id="name" class="text-center lg:text-left text-6xl"></div>
-      <div class="lg:flex">
-        <div>
-          <div id="role" class="text-center lg:text-left text-3xl"></div>
-          <div id="connects" class="text-center lg:text-left text-3xl my-4"></div>
+    <div id="contents" class="mx-auto px-4 lg:w-1/2">
+      <div id="name" class="text-center lg:text-left text-5xl hidden"></div>
+      <div class="lg:flex lg:justify-between">
+        <div class="lg:flex lg:flex-col">
+          <div id="role" class="text-center lg:text-left text-3xl text-gray-700"></div>
+          <div id="connects" class="text-center lg:text-left text-3xl my-2"></div>
           <div id="links" class="text-center lg:text-left"></div>
-          <a target="_top" id="mail" class="block text-center lg:text-left text-sm my-2"></a>
+          <a target="_top" id="mail" class="block text-center lg:text-left text-sm -mt-2"></a>
         </div>
-        <div class="mx-auto w-64">
+        <div class="lg:flex lg:flex-grow lg:ml-5 mt-10 lg:mt-0">
           <codersrank-widget username="guemidiborhane" layout="horizontal"></codersrank-widget>
         </div>
       </div>
