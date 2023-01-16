@@ -8,20 +8,42 @@
     <!-- tailwindcss cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/2dbd60274b.js" crossorigin="anonymous"></script>
+    <!-- replace x.x.x with actual version -->
+    <script src="https://unpkg.com/@codersrank/summary@x.x.x/codersrank-summary.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'JetBrains Mono', monospace;
         }
+
+        .codersrank-widget {
+            --bg-color: transparent;
+            --branding-text-color: rgb(253 224 71);
+            --header-bg-color: transparent;
+            --header-text-color: rgb(253 224 71);
+            --badge-box-show: none;
+            --badge-bg-color: transparent;
+            --badge-text-color: rgb(253 224 71);
+            --name-font-size: 0px;
+            --badge-icon-size: 0px;
+        }
     </style>
 </head>
 <body class="pt-16 px-24 bg-neutral-800">
 
-    <h1 class="text-yellow-300 font-bold text-2xl mb-4">Borhaneddine GUEMIDI</h1>
-    <h2 class="text-teal-400">Full Stack Developer</h2>
-    <h2 class="text-orange-300 text-sm">
-        <i class="fa fa-map-pin"></i> Algiers, Algeria <span class="text-gray-600">/</span> <a href="mailto:guemidiborhane@gmail.com"><i class="fa fa-envelope-o"></i> guemidiborhane@gmail.com</a> <span class="text-gray-600">/</span> <a href="tel:+213555576795"><i class="fa fa-phone"></i> +213 555 576 795</a> <span class="text-gray-600">/</span> <a href="https://github.com/guemidiborhane"><i class="fab fa-github"></i> GitHub</a>
-    </h2>
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+        <div>
+            <h1 class="text-yellow-300 font-bold text-2xl mb-4">Borhaneddine GUEMIDI</h1>
+            <h2 class="text-teal-400">Full Stack Developer</h2>
+            <h2 class="text-orange-300 text-sm">
+                <i class="fa fa-map-pin"></i> Algiers, Algeria <span class="text-gray-600">/</span> <a href="mailto:guemidiborhane@gmail.com"><i class="fa fa-envelope-o"></i> guemidiborhane@gmail.com</a> <span class="text-gray-600">/</span> <a href="tel:+213555576795"><i class="fa fa-phone"></i> +213 555 576 795</a> <span class="text-gray-600">/</span> <a href="https://github.com/guemidiborhane"><i class="fab fa-github"></i> GitHub</a>
+            </h2>
+        </div>
+
+        <div class="rouded-sm p-2 mt-4 lg:mt-0">
+            <codersrank-summary show-avatar="false" branding="false" username="guemidiborhane" layout="horizontal" class="codersrank-widget"></codersrank-summary>
+        </div>
+    </div>
 
     <section class="my-16">
         <p class="text-gray-600 uppercase my-8">/* WOrK EXPERIENCE */</p>
@@ -36,84 +58,97 @@
 
     <section class="my-16">
         <p class="text-gray-600 uppercase my-8">/* Projects */</p>
-        <article class="leading-7 mb-4">
 
-            <h3 class="text-yellow-300 text-xl">aina.dz <small class="text-teal-200 text-sm"><i class="fa fa-award"></i> WSIS Award winning project (2014)</small></h3>
-            <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Jan 2012 - Sep 2018</h4>
-            <p class="text-white">
-                Development of a web application for POC for the company's customers.
-            </p>
+        <div class="flex flex-row gap-4 items-center justify-between">
 
-            <p class="mt-2 flex gap-3">
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Ruby on Rails
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    VueJS
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Twitter Bootstrap
-                </span>
-            </p>
-        </article>
-        <article class="leading-7 mb-4">
-            <h3 class="text-yellow-300 text-xl">ziara.dz</h3>
-            <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Mar 2013 - Nov 2016</h4>
-            <p class="text-white">
-                Development of a web application for Tourism in Algeria.
-            </p>
-            <p class="mt-2 flex gap-3">
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Ruby on Rails
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    VueJS
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Bulma CSS
-                </span>
-            </p>
-        </article>
-        <article class="leading-7 mb-4">
-            <h3 class="text-yellow-300 text-xl">awkaf</h3>
-            <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Apr 2016 - Nov 2016</h4>
-            <p class="text-white">
-                Development of a web application for the management of Awqaf / Mosques in Algeria.
-            </p>
-            <p class="mt-2 flex gap-3">
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    CakePHP
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    VueJS
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Twitter Bootstrap
-                </span>
-            </p>
-        </article>
-        </article>
-        <article class="leading-7 mb-4">
-            <h3 class="text-yellow-300 text-xl">Nooromics</h3>
-            <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Jun 2017 - Oct 2018</h4>
-            <p class="text-white">
-                Development of a web application genome analysis and comparison for the bioinformatics sector. using Fasta, BLAST, etc.
-            </p>
-            <p class="mt-2 flex gap-3">
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    docker
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Laravel
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    VueJS
-                </span>
-                <span class="bg-gray-800 text-xs text-yellow-300 p-2">
-                    Twitter Bootstrap
-                </span>
-            </p>
-        </article>
+          <div>
+
+            <article class="leading-7 mb-4">
+
+                <h3 class="text-yellow-300 text-xl">aina.dz <small class="text-teal-200 text-sm"><i class="fa fa-award"></i> WSIS Award winning project (2014)</small></h3>
+                <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Jan 2012 - Sep 2018</h4>
+                <p class="text-white">
+                    Development of a web application for POC for the company's customers.
+                </p>
+
+                <p class="mt-2 flex gap-3">
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        Ruby on Rails
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        VueJS
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        Twitter Bootstrap
+                    </span>
+                </p>
+            </article>
+            <article class="leading-7 mb-4">
+                <h3 class="text-yellow-300 text-xl">ziara.dz</h3>
+                <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Mar 2013 - Nov 2016</h4>
+                <p class="text-white">
+                    Development of a web application for Tourism in Algeria.
+                </p>
+                <p class="mt-2 flex gap-3">
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        Ruby on Rails
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        VueJS
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        Bulma CSS
+                    </span>
+                </p>
+            </article>
+            <article class="leading-7 mb-4">
+                <h3 class="text-yellow-300 text-xl">awkaf</h3>
+                <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Apr 2016 - Nov 2016</h4>
+                <p class="text-white">
+                    Development of a web application for the management of Awqaf / Mosques in Algeria.
+                </p>
+                <p class="mt-2 flex gap-3">
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        CakePHP
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        VueJS
+                    </span>
+                    <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                        Twitter Bootstrap
+                    </span>
+                </p>
+            </article>
+            <article class="leading-7 mb-4">
+              <h3 class="text-yellow-300 text-xl">Nooromics</h3>
+              <h4 class="text-teal-400">Full Stack Developer <span class="text-gray-600">/</span> Jun 2017 - Oct 2018</h4>
+              <p class="text-white">
+                  Development of a web application genome analysis and comparison for the bioinformatics sector. using Fasta, BLAST, etc.
+              </p>
+              <p class="mt-2 flex gap-3">
+                  <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                      docker
+                  </span>
+                  <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                      Laravel
+                  </span>
+                  <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                      VueJS
+                  </span>
+                  <span class="bg-gray-800 text-xs text-yellow-300 p-2">
+                      Twitter Bootstrap
+                  </span>
+              </p>
+            </article>
+          </div>
+
+          <div class="hidden lg:block">
+            <a href="https://app.daily.dev/guemidiborhane"><img src="https://api.daily.dev/devcards/8583908e4b724c648952fd9a090a825b.png?r=ozt" width="400" alt="Borhaneddine Guemidi's Dev Card"/></a>
+            <p class="text-gray-600 uppercase my-8 text-center">/* What I've been reading */</p>
+          </div>
+        </div>
+
+
         <article class="leading-7 mb-4">
             <h3 class="text-yellow-300 text-xl">Deployment of NETSYS Infrastructure</h3>
             <h4 class="text-teal-400">Systems Administrator <span class="text-gray-600">/</span> Sep 2018 - Present</h4>
@@ -154,8 +189,7 @@
                     Features include:
                     <ul class="list-disc text-white ml-6">
                         <li>Realtime map of interventions</li>
-                        <li>PDF reports at any point of the day from anywhere</li>
-                        <li>Changes to Human and Mean resources availability (T3/T4)</li>
+                        <li>Realtime changes to resources availability</li>
                         <li class="text-gray-600">...</li>
                     </ul>
                 </p>
