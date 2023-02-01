@@ -1,0 +1,8 @@
+#!/bin/sh
+# vim: set ft=sh sw=4 et :
+
+yay -S --noconfirm yadm
+yadm clone https://github.com/guemidiborhane/dotfiles.git -b yadm -f
+yadm restore --staged $HOME
+yadm checkout -- $HOME
+yadm bootstrap
