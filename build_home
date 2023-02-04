@@ -2,7 +2,7 @@
 # vim: set ft=sh sw=4 et :
 
 yay -S --noconfirm --needed yadm
-yadm clone https://github.com/guemidiborhane/dotfiles.git -f --no-bootstrap -b yadm
+yadm clone https://github.com/guemidiborhane/dotfiles.git -f --no-bootstrap
 yadm restore --staged $HOME
 yadm checkout -- $HOME
 yadm bootstrap
